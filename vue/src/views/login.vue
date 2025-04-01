@@ -55,13 +55,13 @@ const login = () => {
           ElMessage.success('登录成功')
 
 
-          // router.push('/')
+           router.push('/')
 
-          if ("USER" === res.data.role){
-            location.href = '/front/home'
-          }else {
-            router.push('/')
-          }
+          // if ("USER" === res.data.role){
+          //   location.href = '/front/home'
+          // }else {
+          //   router.push('/')
+          // }
         } else {
           ElMessage.error(res.msg)
         }
