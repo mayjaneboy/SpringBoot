@@ -1,4 +1,4 @@
-**粘贴以下代码到pom.xml 里面的<dependencies>和</dependencies>之间，添加 Mysql 依赖 和 MyBatis依赖，并按有上交maven图标加载依赖Load Maven Changes**
+**粘贴以下代码到pom.xml 里面的<dependencies>和</dependencies>之间，添加 Mysql 依赖 和 MyBatis依赖，并按右上角maven图标加载依赖Load Maven Changes**
 
 **pom.xml定义了Springboot项目的所有依赖项，springboot项目加载的时候会扫描这个文件里面声明的所有依赖项，然后下载**
 
@@ -38,14 +38,14 @@ mybatis:
   configuration:
     # 配置日志
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-    map-underscore-to-camel-case: true //把数据库中按照下划线格式的改成Java中的驼峰书写方式
+    map-underscore-to-camel-case: true //把数据库中按照下划线格式的内容改成Java中的驼峰书写方式
 ```
 
 **在resources文件夹下创建mapper文件夹**
 
 **在com.example下创建文件夹entity，代表实体类，每一个实体类中的属性和数据库中一张数据表的字段是一一对应的，比如与管理员表对应的类Admin（下面都以Admin为例）:**
 
-```
+```java
 package com.example.entity;
 
 public class Admin {
